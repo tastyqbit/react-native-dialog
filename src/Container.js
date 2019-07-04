@@ -70,14 +70,14 @@ export default class DialogContainer extends React.PureComponent {
       }
     });
     return (
-      <AnimatedModal
-        backdropOpacity={0.3}
-        style={styles.modal}
-        isVisible={visible}
-        animationIn={Platform.OS === "ios" ? IOS_MODAL_ANIMATION : "zoomIn"}
-        animationOut={"fadeOut"}
-        {...otherProps}
-      >
+//       <AnimatedModal
+//         backdropOpacity={0.3}
+//         style={styles.modal}
+//         isVisible={visible}
+//         animationIn={Platform.OS === "ios" ? IOS_MODAL_ANIMATION : "zoomIn"}
+//         animationOut={"fadeOut"}
+//         {...otherProps}
+//       >
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : undefined}
           style={styles.container}
@@ -103,7 +103,7 @@ export default class DialogContainer extends React.PureComponent {
             )}
           </View>
         </KeyboardAvoidingView>
-      </AnimatedModal>
+//       </AnimatedModal>
     );
   }
 }
